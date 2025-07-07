@@ -8,12 +8,6 @@ st.title("AskML: The Smart Chatbot for Machine Learning")
 openai_key = st.secrets["OPENAI_API_KEY"]
 pinecone_key = st.secrets["PINECONE_API_KEY"]
 
-with open(openai_key_file, "r") as f:
-    openai_key = f.readline().strip()
-
-with open(pinecone_key_file, "r") as f:
-    pinecone_key = f.readline().strip()
-
 pinecone_index_name = "mini-proj-2"
 
 # Initialize chatbot
