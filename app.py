@@ -4,9 +4,9 @@ import os
 
 st.title("AskML: The Smart Chatbot for Machine Learning")
 
-# Load API keys from text files
-openai_key_file = "openai_key.txt"
-pinecone_key_file = "pinecone_key.txt"
+# Load API keys 
+openai_key = st.secrets["OPENAI_API_KEY"]
+pinecone_key = st.secrets["PINECONE_API_KEY"]
 
 with open(openai_key_file, "r") as f:
     openai_key = f.readline().strip()
